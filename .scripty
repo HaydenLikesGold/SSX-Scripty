@@ -1,5 +1,9 @@
 #!/bin/bash
 
 if [ "$1" = "python" ]; then
-	source python/scripty.sh $2
+	shift
+	source python/scripty.sh "$@"
+elif [ "$1" = "django" ]; then
+	shift
+	source django/scripty.sh "$@"
 fi
