@@ -22,7 +22,7 @@ init_psql(){
 if [ "$1" = "init" ]; then
 	init
 	if [ "$2" = "with" ]; then
-		if [ "$3" = "psql"]; then
+		if [ "$3" = "psql" ]; then
 			init_psql
 		fi
 	fi
