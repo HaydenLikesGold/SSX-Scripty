@@ -16,7 +16,13 @@ init(){
 	activate_virtualenv
 }
 
-if [ "$1" = "init" ]
-then
+kill_virtual(){
+	deactivate
+	rm -rf venv
+}
+
+if [ "$1" = "init" ]; then
 	init
+elif [ "$1" = "kill" ]; then
+	kill_virtual
 fi
