@@ -1,11 +1,12 @@
 #!/bin/bash=
+
 verify_python_setup(){
-	echo "VERIFY PYTHON IS INSTALLED AND REPO IS ORGANIZED"
+	echo -e "\033[32mVERIFY PYTHON IS INSTALLED AND REPO IS ORGANIZED\033[0m"
 	source Python/scripty.sh init
 }
 
 installation(){
-	echo "INSTALL DJANGO"
+	echo "\033[32mINSTALL DJANGO\033[0m"
 	pip install django
 }
 
@@ -15,7 +16,7 @@ init(){
 }
 
 init_psql(){
-	echo "INSTALL PSYCOPG2"
+	echo "\033[32mINSTALL PSYCOPG2\033[0m"
 	pip install psycopg2
 }
 

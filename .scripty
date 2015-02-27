@@ -2,8 +2,8 @@
 
 if [ "$1" = "python" ]; then
 	shift
-	source python/scripty.sh "$@"
+	source Python/scripty.sh "$@"
 elif [ "$1" = "django" ]; then
 	shift
-	source django/scripty.sh "$@"
+	source Django/scripty.sh "$@"
 fi
